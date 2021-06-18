@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: grey;
+}
+
+form {
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: lightblue;
+    display: grid;
+}
+
+.field {
+    display: grid;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    width: 90%;
+}
+.submit {
+    display: grid;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    width: 96%;
+    text-align: center;
+}
+.field input {
+    display: block;
+    width: 100%;
+    padding-right: 2em;
+}
+#removedob > input {
+    display: block;
+    width: 106%;
+    padding: 0;
+}
+.field input::before {
+    display: block;
+    width: 100%;
+    padding-right: 2em;
+    border: lightpink 2px solid;
+}
+.required::after {
+    content: "Required";
+    background: yellow;
+}
+label::before {
+    content: "*";
+}
+.field input::after {
+    display: block;
+    width: 100%;
+    padding-right: 2em;
+    border: green 2px solid;
+}
+
+.field i {
+    position: absolute;
+    top: 36px;
+    right: -10px;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header,
+footer {
+    background-color: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    position: absolute;
+
+
+}
+
+li>ul {
+    display: none;
+}
+
+li:hover>ul {
+    display: block;
+}
+
+img {
+    height: 200px;
+}
+
+.error {
+    color: red;
+}
+
+.required {
+    font-size: 10px;
+    color: red;
+}
+
+p {
+    text-align: center
+}
+
+@media only screen and (max-width:500px) {
+    #remove {
+        display: none;
+    }
+    #removedob {
+        display: none;
+    }
+
+    img {
+        height: 100px;
+    }
+
+    p {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+    .field {
+        width: 100%;
+        max-width: 400px;
+    }
+    .field i {
+        position: absolute;
+        top: 17px;
+        right: -30px;
+    }
+    .field input {
+        display: block;
+        width: 100%;
+        padding-right: 2em;
+        margin: 0 0 0 20px;
+    }
+    .submit {
+        display: grid;
+        width: 434px;
+        text-align: center;
+        margin: 0 0 0 20px;
+    }
+    form {
+        padding: 0;
+    }
+    header,
+    footer {
+    width: 100%;
+    }
+    label {
+        display: none;
+    }
+}

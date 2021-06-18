@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/java.js"></script>
+    <script src="https://kit.fontawesome.com/fa42208476.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <img src="images/phem.svg" alt="PHEM LOGO">
+</header>
+
+<body>
+    <main>
+        <form>
+            <legend>Sign Up Page</legend>
+            <div class="field">
+                <label for="fname">First Name <span class="required"></span></label>
+                <input id="fname" type="text" name="fname" placeholder="First Name" required maxlength="20"
+                    title="First Name is letters - space ' only" oninput="checkName1(this)">
+                <i class="fas fa-signature"></i>
+                <div id="ferror" class='error'></div>
+            </div>
+            <div class="field">
+                <label for="lname">Last Name <span class="required"></span></label>
+                <input type="text" name="lname" placeholder="Last Name" required maxlength="20"
+                    title="Last name is letters - space ' only" oninput="checkName2(this)">
+                <i class="fas fa-signature"></i>
+                <div id="lerror" class='error'></div>
+            </div>
+            <div class="field">
+                <label for="email">Email <span class="required"></span></label>
+                <input id="email" type="email" name="email" placeholder="Email Address" required oninput="checkEmail(this)">
+                <i class="fas fa-envelope"></i>
+                <div id="emerror" class='error'></div>
+            </div>
+            <div class="field">
+                <label for="Pnumb">Phone Number <span class="required"></span></label>
+                <input type="number" name="Pnumb" placeholder="Phone Number" required oninput="checkPhone(this)">
+                <i class="fas fa-phone"></i>
+                <div id="perror" class='error'></div>
+            </div>
+            <div class="field">
+                <label for="pass1">Password <span class="required"></span></label>
+                <input id="pass1" type="password" name="Pass1" placeholder="Password" required
+                    oninput="arepasswordsEqual(this)">
+                <i class="fas fa-key"></i>
+                <div id="paerror" class='error'></div>
+            </div>
+            <div class="field">
+                <label for="pass2">Re-Type Password <span class="required"></span></label>
+                <input id="pass2" type="password" name="Pass2" placeholder="Re-Type Password" required
+                    oninput="arepasswordsEqual(this)">
+                <i class="fas fa-key"></i>
+                <div id="paerror" class='error'></div>
+            </div>
+            <div class="field" id="removedob">
+                <label for="dob">Date of birth *Optinal*</label>
+                <input type="Date" name="dob">
+            </div>
+            <div class="field" id="remove">
+                <label for="remail">Whould you like to recieve emails about news for the site?*Optinal*</label>
+                <input type="checkbox" name="remail">
+            </div>
+            <div class="submit" id="submit">
+                <input type="submit" id="register" value="Register"/>
+            </div>
+        </form>
+    </main>
+</body>
+<footer>
+    ©PHEM<p>Pauls Contanct details <br><i class="fas fa-envelope"> Pauls@outlook.com</i><br><i class="fas fa-phone">
+            04567890123</i></p>
+    <ul>
+        <li>
+            <div class="hover"><i class="fas fa-video"> Help Link</i></div>
+            <ul>
+                <li><iframe width="300" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Designer Cameron Fennessy</h3>
+</footer>
